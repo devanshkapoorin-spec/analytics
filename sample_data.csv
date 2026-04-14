@@ -1,0 +1,101 @@
+CustomerID,Age,Gender,Region,Tenure_Months,Product,Monthly_Value,Transactions_Last6Months,Risk_Score,Customer_Segment,Churned
+C001,34,Male,North,24,Insurance,4500,8,72,Premium,No
+C002,52,Female,South,60,Savings Account,12000,15,85,High Value,No
+C003,28,Male,West,6,Current Account,2200,22,45,New,Yes
+C004,45,Female,East,36,Loan,8500,5,68,Standard,No
+C005,61,Male,North,84,Insurance,15000,3,91,High Value,No
+C006,33,Female,South,12,Current Account,3100,18,52,Standard,Yes
+C007,29,Male,West,8,Savings Account,1800,30,41,New,Yes
+C008,47,Female,East,48,Insurance,9200,6,79,Premium,No
+C009,55,Male,North,72,Loan,18000,4,88,High Value,No
+C010,38,Female,South,18,Current Account,4200,14,63,Standard,No
+C011,42,Male,West,30,Insurance,7800,7,74,Premium,No
+C012,26,Female,East,3,Current Account,1500,25,38,New,Yes
+C013,58,Male,North,96,Savings Account,22000,10,93,High Value,No
+C014,35,Female,South,15,Loan,5500,9,61,Standard,No
+C015,49,Male,West,54,Insurance,11000,5,82,Premium,No
+C016,31,Female,East,9,Current Account,2800,20,48,New,Yes
+C017,44,Male,North,42,Savings Account,8900,12,76,Standard,No
+C018,27,Female,South,5,Current Account,1900,28,40,New,Yes
+C019,53,Male,West,66,Insurance,13500,4,87,High Value,No
+C020,39,Female,East,27,Loan,6200,8,66,Standard,No
+C021,36,Male,North,21,Current Account,3800,16,59,Standard,Yes
+C022,48,Female,South,51,Insurance,10500,6,81,Premium,No
+C023,30,Male,West,11,Savings Account,2500,23,46,New,Yes
+C024,57,Female,East,78,Loan,16500,3,90,High Value,No
+C025,41,Male,North,33,Insurance,7200,8,73,Premium,No
+C026,25,Female,South,4,Current Account,1400,31,35,New,Yes
+C027,46,Male,West,45,Savings Account,9500,11,78,Standard,No
+C028,32,Female,East,14,Current Account,3300,19,53,Standard,Yes
+C029,60,Male,North,90,Insurance,20000,2,94,High Value,No
+C030,37,Female,South,24,Loan,5800,9,64,Standard,No
+C031,43,Male,West,36,Insurance,8100,7,75,Premium,No
+C032,28,Female,East,7,Current Account,2100,26,42,New,Yes
+C033,54,Male,North,69,Savings Account,14000,5,86,High Value,No
+C034,40,Female,South,30,Loan,6800,8,69,Standard,No
+C035,50,Male,West,57,Insurance,12000,5,83,Premium,No
+C036,29,Female,East,10,Current Account,2400,22,44,New,Yes
+C037,45,Male,North,39,Savings Account,8600,12,77,Standard,No
+C038,34,Female,South,18,Current Account,3600,17,57,Standard,Yes
+C039,56,Male,West,75,Insurance,15500,3,89,High Value,No
+C040,38,Female,East,27,Loan,6500,8,67,Standard,No
+C041,33,Male,North,15,Current Account,3000,20,50,Standard,Yes
+C042,47,Female,South,48,Insurance,10000,6,80,Premium,No
+C043,26,Male,West,6,Current Account,1700,29,39,New,Yes
+C044,59,Female,East,84,Loan,17500,3,92,High Value,No
+C045,42,Male,North,33,Insurance,7500,7,74,Premium,No
+C046,31,Female,South,12,Current Account,2700,21,47,New,Yes
+C047,48,Male,West,51,Savings Account,10200,10,81,Premium,No
+C048,35,Female,East,21,Current Account,3400,18,55,Standard,Yes
+C049,52,Male,North,63,Insurance,12800,4,85,High Value,No
+C050,39,Female,South,30,Loan,6300,8,66,Standard,No
+C051,44,Male,West,39,Insurance,8400,7,76,Premium,No
+C052,27,Female,East,8,Current Account,2000,27,41,New,Yes
+C053,55,Male,North,72,Savings Account,14800,5,87,High Value,No
+C054,36,Female,South,21,Loan,5600,9,62,Standard,No
+C055,49,Male,West,54,Insurance,11200,5,82,Premium,No
+C056,30,Female,East,11,Current Account,2600,23,45,New,Yes
+C057,46,Male,North,42,Savings Account,9100,11,78,Standard,No
+C058,33,Female,South,15,Current Account,3200,19,52,Standard,Yes
+C059,58,Male,West,78,Insurance,16000,3,90,High Value,No
+C060,40,Female,East,27,Loan,6600,8,68,Standard,No
+C061,35,Male,North,24,Current Account,3700,16,58,Standard,Yes
+C062,50,Female,South,57,Insurance,11500,5,83,Premium,No
+C063,28,Male,West,9,Current Account,2200,25,43,New,Yes
+C064,57,Female,East,81,Loan,17000,3,91,High Value,No
+C065,43,Male,North,36,Insurance,7900,7,75,Premium,No
+C066,32,Female,South,14,Current Account,3100,20,51,Standard,Yes
+C067,47,Male,West,48,Savings Account,9800,10,80,Premium,No
+C068,36,Female,East,24,Current Account,3500,17,56,Standard,Yes
+C069,54,Male,North,66,Insurance,13200,4,86,High Value,No
+C070,41,Female,South,33,Loan,7000,8,70,Standard,No
+C071,29,Male,West,10,Current Account,2300,24,44,New,Yes
+C072,48,Female,North,51,Insurance,10800,6,81,Premium,No
+C073,38,Male,South,27,Savings Account,6100,12,65,Standard,No
+C074,53,Female,West,66,Loan,13000,4,85,High Value,No
+C075,42,Male,East,36,Insurance,8200,7,74,Premium,No
+C076,27,Female,North,7,Current Account,1900,28,40,New,Yes
+C077,56,Male,South,75,Savings Account,15200,4,88,High Value,No
+C078,34,Female,West,18,Current Account,3400,18,54,Standard,Yes
+C079,45,Male,East,42,Insurance,9000,6,77,Premium,No
+C080,31,Female,North,13,Current Account,2800,21,48,New,Yes
+C081,60,Male,South,90,Loan,19500,2,93,High Value,No
+C082,37,Female,West,24,Current Account,3800,16,60,Standard,No
+C083,44,Male,East,39,Insurance,8600,7,76,Premium,No
+C084,26,Female,North,5,Current Account,1600,30,37,New,Yes
+C085,51,Male,South,60,Savings Account,12500,9,84,High Value,No
+C086,39,Female,West,30,Loan,6400,8,67,Standard,No
+C087,46,Male,East,45,Insurance,9400,6,78,Premium,No
+C088,32,Female,North,14,Current Account,3000,20,50,Standard,Yes
+C089,55,Male,South,72,Savings Account,14500,5,87,High Value,No
+C090,40,Female,West,30,Loan,6700,8,68,Standard,No
+C091,35,Male,East,21,Current Account,3500,17,57,Standard,Yes
+C092,49,Female,North,54,Insurance,10600,6,81,Premium,No
+C093,28,Male,South,8,Current Account,2100,26,42,New,Yes
+C094,58,Female,West,81,Loan,17200,3,91,High Value,No
+C095,43,Male,East,36,Insurance,8000,7,75,Premium,No
+C096,30,Female,North,11,Current Account,2500,22,46,New,Yes
+C097,47,Male,South,48,Savings Account,9900,10,80,Premium,No
+C098,36,Female,West,24,Current Account,3600,17,56,Standard,Yes
+C099,53,Male,East,66,Insurance,13000,4,85,High Value,No
+C100,41,Female,North,33,Loan,7100,8,70,Standard,No

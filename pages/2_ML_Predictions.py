@@ -94,7 +94,7 @@ with tab1:
         return "background-color: #D1FAE5; color: #065F46; font-weight: 600"
 
     st.dataframe(
-        high_risk[display_cols].reset_index(drop=True).style.applymap(
+        high_risk[display_cols].reset_index(drop=True).style.map(
             risk_color, subset=["Risk_Level"] if "Risk_Level" in display_cols else []
         ),
         use_container_width=True

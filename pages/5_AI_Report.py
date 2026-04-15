@@ -5,7 +5,7 @@ import streamlit as st
 import pandas as pd
 import re
 from datetime import datetime
-import google.generativeai as genai
+from google import genai
 import markdown as md
 from dotenv import load_dotenv
 from utils import apply_styles, check_data, section_header, footer
@@ -237,9 +237,11 @@ Rules:
 - Do not repeat the same point twice.
 """
         try:
-            genai.configure(api_key=GEMINI_API_KEY)
-            gemini = genai.GenerativeModel("gemini-pro")
-            response = gemini.generate_content(prompt)
+            client = genai.Client(api_key=GEMINI_API_KEY)
+            response = client.models.generate_content(
+                model="gemini-2.0-flash",
+                contents=prompt
+            )
             st.session_state["report"] = response.text
         except Exception as e:
             st.error(f"Error generating report: {e}")

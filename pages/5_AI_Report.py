@@ -238,7 +238,7 @@ Rules:
 """
         try:
             genai.configure(api_key=GEMINI_API_KEY)
-            gemini = genai.GenerativeModel("gemini-1.5-flash")
+            gemini = genai.GenerativeModel("gemini-pro")
             response = gemini.generate_content(prompt)
             st.session_state["report"] = response.text
         except Exception as e:

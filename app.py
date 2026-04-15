@@ -23,7 +23,7 @@ st.markdown("""
         <h1>📊 Analytics Tool</h1>
         <p>Predictive Customer Analytics &nbsp;·&nbsp; AI-Powered Insights &nbsp;·&nbsp; AI-Powered Insights</p>
     </div>
-    <div class="header-badge">🤖 Powered by Groq AI</div>
+    <div class="header-badge">🤖 Powered by Gemini AI</div>
 </div>
 """, unsafe_allow_html=True)
 

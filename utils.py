@@ -74,6 +74,6 @@ def metric_card(icon, value, label, color="#2563EB"):
 def footer():
     st.markdown("""
     <div class="footer">
-        Analytics Tool &nbsp;·&nbsp; Powered by Groq AI &nbsp;·&nbsp; Built by Devansh Kapoor
+        Analytics Tool &nbsp;·&nbsp; Powered by Gemini AI &nbsp;·&nbsp; Built by Devansh Kapoor
     </div>
     """, unsafe_allow_html=True)

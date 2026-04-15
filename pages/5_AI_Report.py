@@ -21,9 +21,9 @@ st.markdown("""
 <div class="top-header">
     <div>
         <h1>📄 AI Consulting Report</h1>
-        <p>Executive-level analysis written by Groq AI — ready to share with stakeholders</p>
+        <p>Executive-level analysis written by Gemini AI — ready to share with stakeholders</p>
     </div>
-    <div class="header-badge">🤖 Groq AI</div>
+    <div class="header-badge">🤖 Gemini AI</div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -177,7 +177,7 @@ def generate_pdf(report_text, df):
         pdf.set_y(-18)
         pdf.set_font("Helvetica", "I", 8)
         pdf.set_text_color(148, 163, 184)
-        pdf.cell(0, 10, "Analytics Tool  ·  Powered by Groq AI  ·  Built by Devansh Kapoor", align="C")
+        pdf.cell(0, 10, "Analytics Tool  ·  Powered by Gemini AI  ·  Built by Devansh Kapoor", align="C")
 
         return bytes(pdf.output())
 

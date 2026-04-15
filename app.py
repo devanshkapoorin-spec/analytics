@@ -9,7 +9,7 @@ from utils import apply_styles, section_header, metric_card, footer
 load_dotenv()
 
 st.set_page_config(
-    page_title="EXL AI Analytics",
+    page_title="Analytics Tool",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -20,15 +20,15 @@ apply_styles()
 st.markdown("""
 <div class="top-header">
     <div>
-        <h1>📊 EXL AI Business Analytics Platform</h1>
-        <p>Predictive Customer Analytics &nbsp;·&nbsp; AI-Powered Insights &nbsp;·&nbsp; Built for EXL Service</p>
+        <h1>📊 Analytics Tool</h1>
+        <p>Predictive Customer Analytics &nbsp;·&nbsp; AI-Powered Insights &nbsp;·&nbsp; AI-Powered Insights</p>
     </div>
     <div class="header-badge">🤖 Powered by Groq AI</div>
 </div>
 """, unsafe_allow_html=True)
 
 with st.sidebar:
-    st.markdown("### EXL ANALYTICS")
+    st.markdown("### ANALYTICS TOOL")
     st.markdown("---")
     st.markdown("### DATA INPUT")
     uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])

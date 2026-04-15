@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 from sklearn.ensemble import IsolationForest
 from utils import apply_styles, check_data, section_header, footer
 
-st.set_page_config(page_title="Analytics | EXL", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Analytics | Analytics Tool", page_icon="📊", layout="wide")
 apply_styles()
 
 st.markdown("""

@@ -15,7 +15,7 @@ try:
 except ImportError:
     SHAP_AVAILABLE = False
 
-st.set_page_config(page_title="What-If Simulator | EXL", page_icon="🎯", layout="wide")
+st.set_page_config(page_title="What-If Simulator | Analytics Tool", page_icon="🎯", layout="wide")
 apply_styles()
 
 st.markdown("""

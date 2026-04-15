@@ -19,7 +19,7 @@ try:
 except ImportError:
     SHAP_AVAILABLE = False
 
-st.set_page_config(page_title="ML Predictions | EXL", page_icon="🤖", layout="wide")
+st.set_page_config(page_title="ML Predictions | Analytics Tool", page_icon="🤖", layout="wide")
 apply_styles()
 
 st.markdown("""

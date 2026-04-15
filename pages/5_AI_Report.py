@@ -13,7 +13,7 @@ from utils import apply_styles, check_data, section_header, footer
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
-st.set_page_config(page_title="AI Report | EXL", page_icon="📄", layout="wide")
+st.set_page_config(page_title="AI Report | Analytics Tool", page_icon="📄", layout="wide")
 apply_styles()
 
 st.markdown("""
@@ -91,7 +91,7 @@ def generate_pdf(report_text, df):
         pdf.set_xy(15, 10)
         pdf.set_font("Helvetica", "B", 20)
         pdf.set_text_color(255, 255, 255)
-        pdf.cell(0, 12, "EXL AI Business Analytics Report", ln=True)
+        pdf.cell(0, 12, "Analytics Tool Report", ln=True)
         pdf.set_font("Helvetica", "", 10)
         pdf.set_text_color(147, 197, 253)
         pdf.set_x(15)
@@ -176,7 +176,7 @@ def generate_pdf(report_text, df):
         pdf.set_y(-18)
         pdf.set_font("Helvetica", "I", 8)
         pdf.set_text_color(148, 163, 184)
-        pdf.cell(0, 10, "EXL AI Business Analytics Platform  ·  Powered by Groq AI  ·  Built by Devansh Kapoor", align="C")
+        pdf.cell(0, 10, "Analytics Tool  ·  Powered by Groq AI  ·  Built by Devansh Kapoor", align="C")
 
         return bytes(pdf.output())
 
@@ -194,7 +194,7 @@ if not GROQ_API_KEY:
 if st.button("🚀 Generate Executive Report", type="primary"):
     with st.spinner("Groq AI is analysing your data and writing the report..."):
         summary = build_summary(df)
-        prompt = f"""You are a senior analytics consultant at EXL Service presenting findings to a C-suite client in financial services.
+        prompt = f"""You are a senior analytics consultant at a leading analytics firm presenting findings to a C-suite client in financial services.
 Write a sharp, professional consulting report based on this data. Be direct, specific, and opinionated.
 
 {summary}

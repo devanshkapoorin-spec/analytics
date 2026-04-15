@@ -5,13 +5,14 @@ import streamlit as st
 import pandas as pd
 import re
 from datetime import datetime
-from groq import Groq
+import google.generativeai as genai
 import markdown as md
 from dotenv import load_dotenv
 from utils import apply_styles, check_data, section_header, footer
 
-load_dotenv()
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+load_dotenv(os.path.join(_root, ".env"))
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 st.set_page_config(page_title="AI Report | Analytics Tool", page_icon="📄", layout="wide")
 apply_styles()
@@ -187,12 +188,12 @@ def generate_pdf(report_text, df):
 # ── Report section ─────────────────────────────────────────────────────────────
 section_header("Generate Executive Report", "AI-written consulting report — click to generate")
 
-if not GROQ_API_KEY:
-    st.error("GROQ_API_KEY not found. Add it to your .env file.")
+if not GEMINI_API_KEY:
+    st.error("GEMINI_API_KEY not found. Add it to your .env file.")
     st.stop()
 
 if st.button("🚀 Generate Executive Report", type="primary"):
-    with st.spinner("Groq AI is analysing your data and writing the report..."):
+    with st.spinner("Gemini AI is analysing your data and writing the report..."):
         summary = build_summary(df)
         prompt = f"""You are a senior analytics consultant at a leading analytics firm presenting findings to a C-suite client in financial services.
 Write a sharp, professional consulting report based on this data. Be direct, specific, and opinionated.
@@ -236,13 +237,10 @@ Rules:
 - Do not repeat the same point twice.
 """
         try:
-            client = Groq(api_key=GROQ_API_KEY)
-            response = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
-                messages=[{"role": "user", "content": prompt}],
-                temperature=0.4
-            )
-            st.session_state["report"] = response.choices[0].message.content
+            genai.configure(api_key=GEMINI_API_KEY)
+            gemini = genai.GenerativeModel("gemini-1.5-flash")
+            response = gemini.generate_content(prompt)
+            st.session_state["report"] = response.text
         except Exception as e:
             st.error(f"Error generating report: {e}")
 
